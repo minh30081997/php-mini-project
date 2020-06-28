@@ -1,5 +1,6 @@
 <?php
 
+// Nation function auto find path
 spl_autoload_register(function ($className) {
     $exp = str_replace("_", "/", $className);
     $path = str_replace("Apps", "", dirname(__FILE__));
