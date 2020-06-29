@@ -6,7 +6,7 @@
 include '../Apps/bootstrap.php';
 
 // Create an instance object User
-$test = new Apps_Models_Users();
+// $test = new Apps_Models_Users();
 
 // select all, select one
 // $param = [
@@ -33,3 +33,7 @@ $test = new Apps_Models_Users();
 // update 
 
 // delete
+
+// Router
+$router = new Apps_Libs_Router(__DIR__);
+$router->router();
