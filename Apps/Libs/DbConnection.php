@@ -5,7 +5,6 @@
  * 
  * @author Min <Minhmyn97@gmail.com>
  * @date 2020-06-25 11:48
- * Undocumented class
  */
 class Apps_Libs_DbConnection
 {
