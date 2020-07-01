@@ -139,4 +139,9 @@ class Apps_Libs_Router
     {
         $this->redirect("logout");
     }
+
+    public function pageError($err) 
+    {
+        echo $err;
+    }
 }

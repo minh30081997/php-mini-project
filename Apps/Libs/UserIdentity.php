@@ -1,6 +1,5 @@
 <?php
 session_start();
-include '../Apps/bootstrap.php';
 
 /**
  * Class used to manager login, logout of user
@@ -46,8 +45,7 @@ class Apps_Libs_UserIdentity
     {
         $db = new Apps_Models_Users();
         $query = $db->buildQueryParams([
-            "select" => "*",
-            "where" => "username =:username AND password =:password",
+            "where" => "username = :username AND password = :password",
             "param" => [
                 ":username" => trim($this->username),
                 ":password" => $this->encryptPassword()
