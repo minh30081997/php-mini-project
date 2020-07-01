@@ -86,16 +86,16 @@ class Apps_Libs_DbConnection
      * @param [type] $params: $params as array
      * @return object of class Apps_Libs_DbConnection
      */
-    public function buildQueryParams($params)
+    public function buildQueryParams($params = [])
     {
         // General description of a query
         $default = [
-            "select" => "",
+            "select" => "*",
             "where" => "",
             "other" => "",
-            "param" => "",
+            "param" => [],
             "field" => "",
-            "value" => []
+            "value" => [],
         ];
 
         $this->queryParams = array_merge($default, $params);
@@ -160,7 +160,7 @@ class Apps_Libs_DbConnection
     public function update()
     {
         $sql = "Update" . " " . $this->tableName . " " . "set" . " " . $this->queryParams["value"] . " " . $this->buildCondition($this->queryParams["where"]) . " " . $this->queryParams["other"];
-        $query = $this->query($sql);
+        $query = $this->query($sql, $this->queryParams["param"]);
         return $query;
     }
 
@@ -172,7 +172,7 @@ class Apps_Libs_DbConnection
     public function delete() 
     {
         $sql = "Delete From" . " " . $this->tableName . " " . $this->queryParams["value"] . " " . $this->buildCondition($this->queryParams["where"]) . " " . $this->queryParams["other"];
-        $query = $this->query($sql);
+        $query = $this->query($sql, $this->queryParams["param"]);
         return $query;
     }
 }

@@ -38,3 +38,14 @@ include '../Apps/bootstrap.php';
 $router = new Apps_Libs_Router(__DIR__);
 $router->router();
 
+// $test = new Apps_Models_Categories();
+
+// $result = $test->buildQueryParams([
+//     "select" => "",
+//     "value" => "name = :name",
+//     "where" => "id = :id",
+//     "param" => [":id" => 1, ":name" => "min"],
+// ])->update();
+
+// var_dump($result);
+

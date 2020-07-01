@@ -1,5 +1,7 @@
 <?php
 
+include '../Apps/bootstrap.php';
+
 $router = new Apps_Libs_Router();
 
 $account = trim($router->getPost("account"));

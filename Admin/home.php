@@ -19,9 +19,9 @@ $router = new Apps_Libs_Router();
 
     <div class="show-data">
         <ul>
-            <li><a href="<?php echo $router->createUrl("post/posts") ?>">Manage Posts</a></li>
-            <li><a href="<?php echo $router->createUrl("category/cate") ?>">Manage Category</a></li>
-            <li><a href="<?php echo $router->createUrl("user/users") ?>">Manage Users</a></li>
+            <li><a href="<?php echo $router->createUrl("posts/index") ?>">Manage Posts</a></li>
+            <li><a href="<?php echo $router->createUrl("categories/index") ?>">Manage Categories</a></li>
+            <li><a href="<?php echo $router->createUrl("users/index") ?>">Manage Users</a></li>
         </ul>
     </div>
 </body>
