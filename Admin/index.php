@@ -49,3 +49,13 @@ $router->router();
 
 // var_dump($result);
 
+// $test = new Apps_Models_Posts();
+
+// $result = $test->buildQueryParams([
+//     "select" => "",
+//     "value" => "name = :name, cate_id = :cate_id, created_by = :created_by, description = :description, content = :content",
+//     "where" => "id = :id",
+//     "param" => [":id" => 1, ":name" => "Que", ":cate_id" => 1, ":created_by" => 1, ":description" => "que", ":content" => "que que"],
+// ])->update();
+
+// var_dump($result);
