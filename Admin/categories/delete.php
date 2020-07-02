@@ -26,14 +26,12 @@ if ($router->getPost("submit") && $id) {
         "where" => "id = :id",
         "param" => [":id" => $id],
     ])->delete();
+    if ($result) {
+        $router->redirect("categories/index");
+    } else {
+        $router->pageError("Can not delete");
+    }    
 }
-
-if ($result) {
-    $router->redirect("categories/index");
-} else {
-    $router->pageError("Can not delete");
-}
-
 
 ?>
 
