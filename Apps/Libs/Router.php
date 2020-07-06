@@ -144,4 +144,9 @@ class Apps_Libs_Router
     {
         echo $err;
     }
+
+    public function redirectHome($url = "") 
+    {   
+        return str_replace("Admin", "Public", $this->createUrl($url));
+    }
 }
