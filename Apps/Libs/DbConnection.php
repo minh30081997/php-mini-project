@@ -9,7 +9,7 @@
 class Apps_Libs_DbConnection
 {
     protected $username = "root";
-    protected $password = "Minh.30081997";
+    protected $password = "minh.30081997";
     protected $host = "localhost";
     protected $database = "news";
     protected $tableName;
