@@ -20,15 +20,16 @@ include '../Apps/bootstrap.php';
 
 
 // insert
+// $test = new Apps_Models_Users();
 // $param = [
 //     // object PDO insert
-//     "field" => "(username, password) values (?,?)",
+//     "field" => "(username, password, created_time) values (?,?,now())",
 //     "value" => ["ming", md5("ming")]
 // ];
 
-// $test->buildQueryParams($param);
-// $result = $test->insert();
-// var_dump($result);
+// $result = $test->buildQueryParams($param)->insert();
+// var_dump($result); die();
+
 
 // update 
 
